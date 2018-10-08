@@ -27,6 +27,8 @@ func DataType(data interface{}) string {
 		return "null"
 	case bool:
 		return "boolean"
+	case int:
+		return "integer"
 	case float64:
 		if float64(int(v)) == v {
 			return "integer"
