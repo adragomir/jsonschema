@@ -40,6 +40,8 @@ func DataType(data interface{}) string {
 		return "array"
 	case map[string]interface{}:
 		return "object"
+	case map[interface{}]interface{}:
+		return "object"
 	default:
 		return "unknown"
 	}
